@@ -126,3 +126,44 @@ Run tests with `npm test` to see which pass.
 | Test description | Line | Hint |
 |------------------|------|------|
 | Should divide the displayed number by 100 when % is pressed | ~227 | Press `'5'`, `'0'`, call `pressPercent()`, check display is `'0.5'` |
+
+---
+
+## Part 3 — Create a CLAUDE.md file
+
+**File to create:** `CLAUDE.md` (at the project root, next to `package.json`)
+
+A `CLAUDE.md` file is read automatically by Claude Code (Anthropic's AI coding assistant) every time it opens this project. It gives the AI context about the codebase so it can give better answers and avoid mistakes.
+
+#### What to include
+
+```markdown
+# Super Calculator
+
+## Project overview
+Brief description of what this app is and who it is for.
+
+## Tech stack
+- Angular 19 (standalone components)
+- TypeScript 5.7
+- Karma + Jasmine for unit tests
+
+## How to run
+- Install: `npm install`
+- Dev server: `npm start` → http://localhost:4200
+- Tests: `npm test`
+
+## Project structure
+Describe the main files and what each one does.
+
+## Exercises
+Mention the three unfinished exercises so Claude knows which methods are intentionally empty.
+
+## Coding conventions
+Any rules the team follows (naming, formatting, comment style, etc.).
+```
+
+#### Steps
+1. Create `CLAUDE.md` at the root of the project.
+2. Fill in each section above with real information about this project.
+3. Commit and push the file to GitHub.
